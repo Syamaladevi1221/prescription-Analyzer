@@ -22,7 +22,7 @@ if option == "Upload Image":
                 text = response.json()["text"]
                 st.text_area("Extracted Text", value=text, height=150)
                 # Analyze the text
-                analysis_response = requests.post("http://localhost:8000/analyze_prescription", json={"text": text})
+                analysis_response = requests.post("https://my-fastapi-backend.onrender.com/analyze_prescription", json={"text": user_input})
                 if analysis_response.ok:
                     result = analysis_response.json()
 elif option == "Enter Text":
