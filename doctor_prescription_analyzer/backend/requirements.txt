@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+pillow
+python-multipart
+tesseract
+pytesseract
+transformers
+torch
